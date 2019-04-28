@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin:0;
+}
+
+body {
+    font-family: arial;
+}
+
+.topNav {
+    overflow: hidden;
+    height: 60px;
+    background-color: rgb(10,23,41);
+
+}
+
+.content {
+    height: 100%;
+    position: relative;
+    margin:0;
+}
+
+.content::before{
+    content: "";
+    margin:0 0 0 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background-image: url("fwbg3.png");*/
+    background-image: linear-gradient(rgb(156, 211, 249),rgb(156, 211, 249), rgb(156, 211, 249), rgb(156, 211, 249), rgb(156, 211, 249), rgb(122, 191, 250), rgb(13, 99, 174), rgb(10,23,41) , rgb(10,23,41) , rgb(10,23,41), rgb(10,23,41), rgb(10,23,41));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(15px);
+    z-index: -100;
+}
+
+
+#myCanvas {
+    display: block;
+    margin-top: 6vh;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+button {
+    position: relative;
+    padding: 7px;
+    /*Luft i knappen */
+    background-color: white;
+    /*Bakgrunnsfarge */
+    color: rgb(10,23,41);
+    /*tekstfarge*/
+    font-size: 190%;
+    width: 700px;
+    height: 100px;
+    /*tekststørrelse */
+    border: 1px solid rgb(10,23,41);
+    /*kantlinje, størrelse, type og farge */
+    border-radius: 5px;
+    /*avrunda kanter */
+    outline: none;
+    /*ingen linje på utside */
+    cursor: pointer;
+    /*museklikker blir peker */
+    transition-duration: 0.6s;
+    /*velg tid på transformasjon, f.eks hover. */
+}
+
+button:hover {
+    background-color: rgb(156, 211, 249);
+    /*bakgrunnsfarge */
+    color: rgb(10,23,41);
+    /*tekstfarge */
+}
+
+/* Når knappen klikkes ned */
+
+/*
+button:active {
+   /*Endrer bakgrunnsfarge
+   background-color: rgb(99, 186, 250);
+   /* Skalerer størrelsen på hele knappen til 0.9, som gjør
+   at knappen blir mindre, og den får en fin effekt av å bli
+   klikket ned
+   transform: scale(0.9);
+   /*Lengden på overgangen, 0.1s = 100ms
+   transition: 100ms;
+}
+*/
